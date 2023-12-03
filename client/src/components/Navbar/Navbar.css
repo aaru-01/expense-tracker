@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar-container {
+    padding: 10px;
+    /* background-color: rgb(99, 99, 118); */
+background-color: rgb(76, 76, 102);
+}
+
+.heading-expense-traker {
+    color: whitesmoke;
+    cursor: pointer;
+}
+.tracker-text{
+    color: gold;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 10px;
+    margin-left: 50px;
+}
+.menu-list{
+    margin: 4px;
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
