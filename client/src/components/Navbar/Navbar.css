@@ -1,31 +1,116 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
 
-.main-navbar-container {
-    padding: 10px;
-    /* background-color: rgb(99, 99, 118); */
-background-color: rgb(76, 76, 102);
+.Navbar-container {
+    /* background-color: white; */
+    background-color: rgb(76, 76, 102);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading-expense-traker{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 40px;
+}
+.tracker-text {
+    color: gold;
+}
+.menu-list{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin: 0px 15px;
+}
+.menu-list:hover{
+    color: gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.navbar-user-container{
+    color: white;
+    font-size: 22px;
+}
+.navbar-logout{
+    text-decoration: none;
+    color: white !important;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media screen  and (max-width: 768px){
+    .Navbar-container{
+        flex-direction: column;
+        align-items:start;
+    }
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .menu-list{
+        margin: 10px 0;
+    }
+    .menu-list:hover{
+        background-color: rgb(76, 76, 102);
+       color: white;
+        padding:0;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+    .navbar-user-container{
+        margin-top: 10px;
+    }
+}
+
+/* .main-navbar-container {
+    padding: 2px;
+    background-color: rgb(76, 76, 102);
+    position: relative;
+    cursor: pointer;
 }
 
 .heading-expense-traker {
     color: whitesmoke;
     cursor: pointer;
+    font-size: 40px;
 }
-.tracker-text{
+
+.tracker-text {
     color: gold;
 }
 
-.navbar-menu {
-    display: flex;
-    justify-content:space-evenly;
-    margin: 10px;
-    margin-left: 50px;
+.menu-list {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px 15px;
 }
-.menu-list{
+
+.menu-list:hover{
+   color: gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+} */
+
+/* .menu-list {
     margin: 4px;
     text-decoration: none;
     color: white;
     font-size: 22px;
-}
+} */
+/* 
+.navbar-user-container {
+    position: absolute;
+    right: 40px;
+    top: 18px;
+    color: white;
+    font-size: 22px;
+} */

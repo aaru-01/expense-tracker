@@ -1,0 +1,136 @@
+.transaction-container {
+    width: 390px;
+    height: 520px;
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(99, 98, 98);
+    cursor: pointer;
+    color: rgb(127, 127, 243);
+}
+
+.input-box {
+    padding: 7px;
+    padding-left: 40px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 1px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.headingadd {
+    color: rgb(76, 76, 102);
+}
+
+.form-control-regi {
+    font-size: 20px;
+    padding: 6px;
+    margin: 10px;
+    padding-left: 25px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.btn-addTransaction {
+    display: block;
+    margin: 10px auto;
+    width: 205px;
+    padding: 10px;
+    border: 1px solid rgba(76, 76, 102);
+    border-radius: 10px 120px;
+    font-size: 20px;
+}
+
+.btn-addTransaction:hover {
+    cursor: pointer;
+    background-color: rgba(76, 76, 102);
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px 120px;
+    font-size: 20px;
+}
+
+.gender-type {
+    margin-left: 20px;
+}
+
+.select-category {
+    margin-left: 50px;
+
+}
+
+.cetgory-text {
+    margin-top: 20px;
+    margin-left: 18px;
+    font-size: 20px;
+}
+
+.type-text {
+    font-size: 24px;
+}
+
+.btn-addTransaction {
+    display: block;
+    margin: 40px auto;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.type-CD-text {
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .transaction-container {
+        width: 270px;
+        height: 450px;
+        margin: 100px auto;
+        padding: 20px 50px;
+    }
+
+    .gender-type {
+        margin-left: 20px;
+        margin-right: 5px;
+        position: relative;
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .cetgory-text {
+        position: relative;
+        bottom: 30px;
+        right: 15px;
+    }
+
+    .type-text {
+        font-size: 18px;
+        position: relative;
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .heading-addtransaction {
+        font-size: 23px;
+    }
+
+    .type-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .btn-addTransaction {
+        display: block;
+        margin: 23px auto;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .input-box {
+        position: relative;
+        bottom: 20px;
+    }
+}

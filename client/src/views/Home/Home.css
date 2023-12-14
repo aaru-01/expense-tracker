@@ -6,7 +6,7 @@
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 15px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     margin: 20px 0;
     box-shadow: 0 0 5px 1px #ccc;
     position: relative;
@@ -23,15 +23,37 @@
 .credit-amount {
     color: green;
 }
+.types-date-time{
+    font-size: 24px;
+}
+.description{
+    font-size: 23px;
+}
 
 .debit-amount {
     color: red;
+}
+.image-delete{
+    width: 40px;
+    position: absolute;
+    right: 22px;
+    bottom: 18px;
+    box-shadow: 3px 3px 6px 2px gray;
+    /* border-radius: 5px; */
+}
+.image-update{
+    width: 39px;
+    position: absolute;
+    right: 90px;
+    bottom: 18px;
+    box-shadow: 3px 4px 6px 2px gray;
 }
 
 .transaction-category {
     position: absolute;
     top: 20px;
     right: 20px;
+    font-size: 27px;
 }
 .total{
  color: rgb(124, 43, 43);

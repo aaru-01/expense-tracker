@@ -2,10 +2,11 @@ import User from "./../models/User.js";
 
 const postApiLogin = async (req, res) => {
     const { email, password } = req.body;
-    if (!email || password) {
-        res.json({
+
+    if (!email || !password) {
+        return res.json({
             success: true,
-            message: "Please provide email and password."
+            message: "Please provide email and password"
         })
     }
     const user = await User.findOne({
@@ -25,7 +26,6 @@ const postApiLogin = async (req, res) => {
             message: "Invalid credentials"
         });
     }
-
-}
+};
 
 export { postApiLogin };

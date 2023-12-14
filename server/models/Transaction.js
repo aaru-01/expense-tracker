@@ -1,6 +1,11 @@
 import { Schema, model } from "mongoose";
 
 const transactionSchema = new Schema({
+    user: {
+        type: Schema.Types.ObjectId,
+        required: true,
+        ref: 'User'
+    },
     amount: {
         type: Number,
         required: true
@@ -12,7 +17,7 @@ const transactionSchema = new Schema({
     },
     category: {
         type: String,
-        enum: ['food', 'entertainment', 'rent', 'shopping', 'travel', 'education', 'salary','freelancing','side-hussle','other'],
+        enum: ['food', 'entertainment', 'rent', 'shopping', 'travel', 'education', 'salary', 'freelancing', 'side-hussle', 'other'],
         default: 'other'
     },
     description: {
@@ -22,5 +27,5 @@ const transactionSchema = new Schema({
     timestamps: true,
 })
 
-const Trasanction = model('Transaction',transactionSchema)
-export default Trasanction;
+const Transaction = model('Transaction', transactionSchema)
+export default Transaction;
