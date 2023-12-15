@@ -61,6 +61,30 @@
 .debit-text{
     color: rgb(232, 50, 110);
 }
-@media screen and (max-width:768px) {
-    
+
+
+@media screen and (max-width: 668px){
+    .types-date-time{
+        font-size: 17px;
+    }
+    .transaction-category {
+    top: 100px;
+    left: 25px;
+    font-size: 20px;
+}
+.description{
+    font-size: 18px;
+    position: relative;
+    top:20px;
+}
+.image-update{
+    width: 30px;
+    right: 65px;
+    cursor: pointer;
+}
+.image-delete{
+    width: 32px;
+    right: 15px;
+    cursor: pointer;
+}
 }

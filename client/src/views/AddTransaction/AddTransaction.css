@@ -134,3 +134,20 @@
         bottom: 20px;
     }
 }
+
+@media screen and (max-width: 668px) {
+    .transaction-container {
+        width: 300px;
+       margin-left:15px ;
+    }
+    .input-box {
+        padding: 7px;
+       position: relative;
+       right: 20px;
+    }
+    .form-control-regi {
+        padding: 7px;
+        position: relative;
+        right: 26px; 
+    }
+}
