@@ -6,6 +6,7 @@ import showToast from 'crunchy-toast';
 import axios from 'axios';
 
 function Login() {
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("");
   
@@ -22,10 +23,12 @@ function Login() {
         window.location.href = "/addtransaction";
       }
   
-    }  
+    };
   
     useEffect(() => {
       const storageUser = JSON.parse(localStorage.getItem("user") || '{}');
+     console.log(storageUser);
+     
       if (storageUser?.email) {
         alert("You are already logged in!");
         window.location.href = "/";
