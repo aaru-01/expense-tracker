@@ -1,14 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import "./AddTransaction.css"
 import axios from 'axios';
 import showToast from 'crunchy-toast';
 import Navbar from '../../components/Navbar/Navbar.js'
 
 function AddTransaction() {
+
     const [amount, setAmount] = useState('');
     const [type, setType] = useState('');
     const [description, setDescription] = useState('');
     const [category, setCategory] = useState('');
+    const [user, setUser] = useState({});
 
     const addtransactions = async () => {
         const userStorage = JSON.parse(localStorage.getItem('user'));
@@ -16,19 +18,19 @@ function AddTransaction() {
         if (!amount) {
             alert("Amount is required")
             return;
-          }
-          if (!type) {
+        }
+        if (!type) {
             alert("Type is required")
             return;
-          }
-          if (!description) {
+        }
+        if (!description) {
             alert("Description is required")
             return;
-          }
-          if (!category) {
+        }
+        if (!category) {
             alert("Category is required")
             return;
-          }
+        }
 
         const response = await axios.post('/api/transaction', {
             user: userStorage?._id,
@@ -45,6 +47,18 @@ function AddTransaction() {
         }
     }
 
+    useEffect(() => {
+        const userstorageData = JSON.parse(localStorage.getItem('user') || '{}');
+
+        if (userstorageData?.email) {
+            setUser(userstorageData);
+        }
+        else {
+            showToast('you are not logged in!', 'danger', 1000);
+            window.location.href = '/login'
+        }
+
+    }, [])
     return (
         <div>
             <Navbar />
@@ -115,7 +129,7 @@ function AddTransaction() {
                             <input
                                 type='text'
                                 placeholder='Enter description'
-                                className='form-control-regi'
+                                className='form-control-regi description-text'
                                 value={description}
                                 onChange={(e) => {
                                     setDescription(e.target.value)

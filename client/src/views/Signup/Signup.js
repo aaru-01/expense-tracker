@@ -90,7 +90,7 @@ function Signup() {
       gender: gender,
     });
     console.log(response.data);
-    if (response.data.success) {
+    if (response?.data?.success) {
       showToast(response.data.message, "success", 3000);
       window.location.href = "/login";
     } else {

@@ -16,14 +16,14 @@ const postApiSignup = async (req, res) => {
         const savedUser = await user.save();
 
         res.json({
-            sucess: true,
+            success: true,
             data: savedUser,
             message: "Signup Sucessfully.."
         })
     }
     catch (e) {
         res.json({
-            sucess: false,
+            success: false,
             message: e.message
         })
     }

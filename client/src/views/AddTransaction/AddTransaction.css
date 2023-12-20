@@ -137,17 +137,29 @@
 
 @media screen and (max-width: 668px) {
     .transaction-container {
-        width: 300px;
+        width: 270px;
        margin-left:15px ;
     }
     .input-box {
-        padding: 7px;
+        padding: 2px;
        position: relative;
-       right: 20px;
+       right: 33px;
     }
     .form-control-regi {
-        padding: 7px;
+        padding: 3px;
         position: relative;
-        right: 26px; 
+        right: 30px; 
     }
+    .description-text{
+        position: relative;
+        right: 40px;
+    }
+    .btn-addTransaction {
+        display: block;
+        /* margin: 23px auto; */
+        position: relative;
+        bottom: 10px;
+        right: 20px;
+    }
+
 }

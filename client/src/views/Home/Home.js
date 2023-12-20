@@ -21,7 +21,7 @@ function Home() {
     "travel": "✈",
     "education": "📚",
     "salary":"💰",
-    "freelansing": "💻",
+    "freelancing": "💻",
     "side-hussle": "👔👗",
     "other": "🤷‍♂️"
   }
